@@ -1,5 +1,5 @@
 const doGet = (e) => {
-  const page = (e.parameter.p || "index");
+  const page = (e.parameter.p || "Top");
   return htmlOutput = HtmlService.createTemplateFromFile(page)
       .evaluate()
       .setTitle("ページ遷移")
