@@ -39,9 +39,9 @@
         var ssStuInformation = SpreadsheetApp.getActive().getSheetByName("StudentInformation");
 
         gradeList = ssDataTable.getRange(1,1,13,1).getValues();
-        for(var  i; i<myData.length; i++){
+        for(var  i; i<gradeList.length; i++){
           output.append("<li>" + gradeList[i][0] + "</li>");
-        }      
+        }
 
       ?>
     </div>
