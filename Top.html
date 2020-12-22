@@ -15,27 +15,53 @@
 
 <body>
   <div class="head-wrapper">
-    <h1>
-      英才個別学院板橋校・TOP
-    </h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="https://script.google.com/macros/s/AKfycbzKtGypTAZkEr_CGMgSnz40hUO2D4CD6UUAT8-Y9nZ3AwYSdmQ/exec">板橋校・講師メニュー</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://script.google.com/macros/s/AKfycbzKtGypTAZkEr_CGMgSnz40hUO2D4CD6UUAT8-Y9nZ3AwYSdmQ/exec">ホーム<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="https://docs.google.com/spreadsheets/d/1T-l3ohIUQWr_4YsScxC4uun5XmOeVJceBah0sMWRqMM/edit?usp=sharing">生徒情報</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">準備中</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+        </form>
+      </div>
+    </nav>
   </div>
 
   <div class="contents-wrapper">
-    <div class="menu-wrapper">
-
-    </div>
-    <div class="main-wrapper">
-      <a href="https://script.google.com/macros/s/AKfycbzKtGypTAZkEr_CGMgSnz40hUO2D4CD6UUAT8-Y9nZ3AwYSdmQ/exec?p=stu_information">
-        <button type="button" class="btn btn-secondary btn-lg btn-block">
-          生徒情報
-        </button>
-      </a>
-      <a href="">
-        <button type="button" class="btn btn-secondary btn-lg btn-block">
-          準備中
-        </button>
-      </a>
-    </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">生徒情報 <span class="badge badge-pill badge-info">重要</span></h5>
+              <p class="card-text">授業のたびにこのページを確認して最新の生徒情報・指導方針をご覧ください。</p>
+              <a href="https://docs.google.com/spreadsheets/d/1T-l3ohIUQWr_4YsScxC4uun5XmOeVJceBah0sMWRqMM/edit?usp=sharing" class="btn btn-primary">開く</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">生徒テスト結果入力（準備中)</h5>
+              <p class="card-text">生徒のテスト結果を入力することができます。</p>
+              <a href="#" class="btn btn-primary disabled">開く</a>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 
 </body>
