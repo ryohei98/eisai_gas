@@ -22,9 +22,6 @@
 
   <div class="contents-wrapper">
     <div class="menu-wrapper">
-
-    </div>
-    <div class="main-wrapper">
       <a href="https://script.google.com/macros/s/AKfycbzKtGypTAZkEr_CGMgSnz40hUO2D4CD6UUAT8-Y9nZ3AwYSdmQ/exec?p=stu_information">
         <button type="button" class="btn btn-secondary btn-lg btn-block">
           生徒情報
@@ -35,6 +32,18 @@
           準備中
         </button>
       </a>
+    </div>
+    <div class="main-wrapper">
+      <?
+        var ssDataTable = SpreadsheetApp.getActive().getSheetByName("DataTable");
+        var ssStuInformation = SpreadsheetApp.getActive().getSheetByName("StudentInformation");
+
+        gradeList = ssDataTable.getRange(1,1,13,1).getValues();
+        for(var  i; i<myData.length; i++){
+          output.append("<li>" + gradeList[i][0] + "</li>");
+        }      
+
+      ?>
     </div>
   </div>
 
