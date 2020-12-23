@@ -42,26 +42,27 @@
   </div>
 
   <div class="contents-wrapper">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">生徒情報 <span class="badge badge-pill badge-info">重要</span></h5>
-              <p class="card-text">授業のたびにこのページを確認して最新の生徒情報・指導方針をご覧ください。</p>
-              <a href="https://docs.google.com/spreadsheets/d/1T-l3ohIUQWr_4YsScxC4uun5XmOeVJceBah0sMWRqMM/edit?usp=sharing" class="btn btn-primary">開く</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">生徒テスト結果入力（準備中)</h5>
-              <p class="card-text">生徒のテスト結果を入力することができます。</p>
-              <a href="#" class="btn btn-primary disabled">開く</a>
-            </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">生徒情報 <span class="badge badge-pill badge-info">重要</span></h5>
+            <p class="card-text">授業のたびにこのページを確認して最新の生徒情報・指導方針をご覧ください。</p>
+            <a href="https://docs.google.com/spreadsheets/d/1T-l3ohIUQWr_4YsScxC4uun5XmOeVJceBah0sMWRqMM/edit?usp=sharing" class="btn btn-primary">開く</a>
           </div>
         </div>
       </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">生徒テスト結果入力（準備中)</h5>
+            <p class="card-text">生徒のテスト結果を入力することができます。</p>
+            <a href="#" class="btn btn-primary disabled">開く</a>
+          </div>
+        </div>
+      </div>
+      <?!= getOutputFromStuData().getContent()?>
+    </div>
   </div>
 
 </body>
