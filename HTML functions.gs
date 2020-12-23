@@ -20,7 +20,7 @@ function getOutputFromStuData () {
   Logger.log(gradeList)
 
   for(var  i1=0; i1<gradeList.length; i1++){
-    output.append('<nav aria-label="breadcrumb col-12">\n<ol class="breadcrumb">\n<li class="breadcrumb-item active" aria-current="page">' + gradeList[i1][0] + "</li>\n</ol>\n</nav>\n");
+    output.append('<nav aria-label="breadcrumb">\n<ol class="breadcrumb">\n<li class="breadcrumb-item active" aria-current="page">' + gradeList[i1][0] + "</li>\n</ol>\n</nav>\n");
 
     for( var i2 =7; i2<stuInfo.length; i2++){
 
