@@ -40,28 +40,29 @@
       </div>
     </nav>
   </div>
-
-  <div class="container mt-5">
-    <div class="row mt-5">
-      <div class="col-sm-6 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">生徒情報 <span class="badge badge-pill badge-info">重要</span></h5>
-            <p class="card-text">授業のたびにこのページを確認して最新の生徒情報・指導方針をご覧ください。</p>
-            <a href="https://script.google.com/macros/s/AKfycbzKtGypTAZkEr_CGMgSnz40hUO2D4CD6UUAT8-Y9nZ3AwYSdmQ/exec" class="btn btn-primary">開く</a>
+  <div class="container contents-wrapper">
+    <div class="container mt-5">
+      <div class="row mt-5">
+        <div class="col-sm-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">生徒情報 <span class="badge badge-pill badge-info">重要</span></h5>
+              <p class="card-text">授業のたびにこのページを確認して最新の生徒情報・指導方針をご覧ください。</p>
+              <a href="https://script.google.com/macros/s/AKfycbzKtGypTAZkEr_CGMgSnz40hUO2D4CD6UUAT8-Y9nZ3AwYSdmQ/exec" class="btn btn-primary">開く</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">生徒テスト結果入力（準備中)</h5>
-            <p class="card-text">生徒のテスト結果を入力することができます。</p>
-            <a href="#" class="btn btn-primary disabled">開く</a>
+        <div class="col-sm-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">生徒テスト結果入力（準備中)</h5>
+              <p class="card-text">生徒のテスト結果を入力することができます。</p>
+              <a href="#" class="btn btn-primary disabled">開く</a>
+            </div>
           </div>
         </div>
+        <?!= getOutputFromStuData().getContent()?>
       </div>
-      <?!= getOutputFromStuData().getContent()?>
     </div>
   </div>
 
