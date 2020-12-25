@@ -34,7 +34,7 @@ function getOutputFromStuData () {
           Logger.log("gradeList[6][%s]:%s",i3,stuInfo[6.0][i3]);
           Logger.log("gradeList[%s][%s]:%s",i2,i3,stuInfo[i2][i3]);
         }
-           output.append('</div>/n<div>');
+           output.append('</div>\n</div>');
       }
     }
 
