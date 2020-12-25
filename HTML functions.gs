@@ -15,7 +15,7 @@ function getOutputFromStuData () {
 
   Logger.log("stuInfo:%s",stuInfo);
 
-  var output = HtmlService.createHtmlOutput('<div class = "row">');
+  var output = HtmlService.createHtmlOutput('<div class = "row col-12">');
 
   Logger.log(gradeList)
 
@@ -25,7 +25,7 @@ function getOutputFromStuData () {
     for( var i2 =7; i2<stuInfo.length; i2++){
 
       if(gradeList[i1][0] == stuInfo[i2][0]){
-        output.append('<div class="card mb-3">\n<div class="card-body row">');
+        output.append('<div class="card mb-3 col-12">\n<div class="card-body row">');
         for(var i3 in stuInfo[i2]){
 
           output.append('<dt class="col-sm-3">'+ stuInfo[6.0][i3] + '</dt>\n');
