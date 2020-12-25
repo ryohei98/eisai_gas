@@ -25,9 +25,11 @@ function getOutputFromStuData () {
     for( var i2 =7; i2<stuInfo.length; i2++){
 
       if(gradeList[i1][0] == stuInfo[i2][0]){
+//        if(i2 < 10){
         output.append('<div class="card mb-3 col-12">\n<div class="card-body row">');
+        
         for(var i3 in stuInfo[i2]){
-
+          
           output.append('<dt class="col-sm-3">'+ stuInfo[6.0][i3] + '</dt>\n');
           output.append('<dd class="col-sm-9">' + stuInfo[i2][i3] + '</dd>\n');
 
@@ -35,6 +37,7 @@ function getOutputFromStuData () {
           Logger.log("gradeList[%s][%s]:%s",i2,i3,stuInfo[i2][i3]);
         }
            output.append('</div>\n</div>');
+//      }
       }
     }
 
